@@ -123,4 +123,5 @@ export type Image = {
   unwind_status?: ImageStatus | null;
   arch?: string;
   image_addr?: string;
+  uuid?: string;
 };
