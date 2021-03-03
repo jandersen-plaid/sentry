@@ -13,6 +13,7 @@ import space from 'app/styles/space';
 import theme from 'app/utils/theme';
 
 const HEADER_HEIGHT = 60;
+const FOOTER_HEIGHT = 92;
 
 export const DiscoverWrapper = styled('div')`
   display: flex;
@@ -276,7 +277,7 @@ export const SavedQueryUpdated = styled('div')`
 export const QueryPanelContainer = styled('div')`
   position: absolute;
   width: calc(100% + 1px); /* Add 1px for border */
-  height: calc(100% - ${HEADER_HEIGHT}px);
+  height: calc(100% - ${HEADER_HEIGHT}px - ${FOOTER_HEIGHT}px);
   background-color: ${p => p.theme.background};
   top: ${HEADER_HEIGHT}px;
   border-right: 1px solid ${p => p.theme.border};
